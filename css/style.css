@@ -1,0 +1,140 @@
+/* *######### General Styles ##########*/
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+ul {
+   list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+img {
+   display: block;
+   width: 100%;
+}
+
+p {
+   margin: 0;
+}
+:root {
+   scroll-behavior: auto ;
+}
+
+/** ### Home */
+
+#home {
+   & {
+      width: 100%;
+      height: 660px;
+      background-image: url(../images/Holiday-Party-Stock.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+      color: white;
+      position: relative;
+   }
+   .layer {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(46, 194, 214, 0.6);
+   }
+   .nav-menu {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 0px;
+      z-index: 99999;
+      overflow-x: hidden;
+   }
+   .menu {
+      position: absolute;
+      top: 50%;
+      left: 3%;
+      font-size: 30px;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      color: white;
+   }
+   .nav-menu a:hover {
+      color: rgba(46, 194, 214, 0.9);
+      transition: 0.5s;
+   }
+   .nav-menu i {
+      position: absolute;
+      right: 40px;
+   }
+}
+/** ### slider */
+#slider {
+   & {
+      margin: 100px auto;
+      width: 50%;
+      background-color: rgba(46, 194, 214, 0.8);
+   }
+   p {
+      background-color: #ccc;
+      padding: 10px 0;
+      color: black;
+      display: none;
+   }
+   h2 {
+      padding: 10px;
+   }
+}
+/** ### count  */
+#count {
+   & {
+      background-image: url(../images/invitation-2508607__340.jpg);
+      background-repeat: repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+      position: relative;
+      min-height: 330px;
+   }
+   @media (max-width: 992px) {
+      & {
+         min-height: 700px;
+      }
+   }
+   .layer {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(46, 194, 214, 0.6);
+      color: white;
+   }
+   .date {
+      font-weight: 700;
+      font-size: 24px;
+      border: 2px solid white;
+   }
+}
+/* * ### frm */
+#form {
+   .icons span {
+      width: 40px;
+      border: 1px solid black;
+      margin: 0 10px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.5s;
+   }
+   .icons span:hover {
+      background-color: red;
+      color: white;
+   }
+}
